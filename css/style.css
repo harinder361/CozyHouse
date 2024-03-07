@@ -765,7 +765,7 @@ body {
 }
 
 .donation__description-button::before {
-  content: "";
+  /* content: ""; */
   width: 30px;
   height: 24px;	
   position: absolute;
