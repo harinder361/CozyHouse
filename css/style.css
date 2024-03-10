@@ -18,7 +18,7 @@ main {
 
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 0.67em 0;
 }
 
@@ -81,7 +81,7 @@ textarea {
 
 
 body {
-  min-width: 1190px;
+  min-width: 100vw;
   font-family: "Arial", sans-serif;
   background-color: #fafafa;
 } 
@@ -90,13 +90,13 @@ body {
 .button {
   display: block;
   font-family: "Georgia", serif;
-  font-size: 17px;
+  font-size: 1.14em;
   letter-spacing: 0.06em;
-  line-height: 52px;
+  line-height: 3em;
   text-align: center;
   text-decoration: none;
   color: #292929;
-  border-radius: 50px;
+  border-radius: 2em;
   box-sizing: border-box;
   transition: background-color 0.2s;
 }
@@ -115,29 +115,30 @@ body {
 **************************************************************************************************** */
 
 .site-list {
-  min-width: 470px;
+  min-width: 40vw;
   margin: 0;
-  margin-top: 70px;
+  margin-top: 4.5em;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   list-style: none;
 }
 
-.site-list__item {
+/* .site-list__item {
   margin-left: 38px;
-}
+} */
 
 .site-list__link {
-  padding-bottom: 5px;
-  font-size: 15px;
-  line-height: 29px;
+  /* padding-bottom: 5px; */
+  font-size: 0.95em;
+  /* line-height: 29em; */
   text-decoration: none;
 }
 
 .site-list__link:hover {
-  border-bottom: 3px solid #f1cdb3;
+  border-bottom: 3px solid #59a151;
 } 
 
 .site-list__link--light {
@@ -167,9 +168,9 @@ body {
 
 
 .main-header {
-  min-height: 925px;
+  min-height: 100vh;
   background-color: #000000;	
-  background-image: url(../img/header_bg.jpg);
+  background-image: url(../img/header_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -177,9 +178,9 @@ body {
 } 
 
 .main-header__container {
-  width: 1170px;
-  margin: 0 auto;
-  margin-bottom: 234px;
+  width: 100vw;
+  margin: 0 5%;
+  margin-bottom: 30vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -188,28 +189,28 @@ body {
 }
 
 .main-header__logo {
-  width: 190px;
+  width: 12em;
   margin: 0;
-  margin-top: 52px;
+  margin-top: 3em;
   text-align: center;
 }
 
 .main-header__logo-title {
   font-family: "Georgia", serif;
-  font-size: 32px;
+  font-size: 2.3em;
   letter-spacing: 0.06em;
-  color: #f1cdb3;
+  color: #6cbe7a;
 }
 
 .main-header__logo-text {
-  font-size: 13px;
+  font-size: 0.8em;
   letter-spacing: 0.1em;
-  line-height: 29px;
+  line-height: 0.5em;
   color: #ffffff;
 }
 
 .main-header__inner {
-  width: 1170px;
+  width: 80vw;
   margin: 0 auto;
   position: relative;
   z-index: 11;
@@ -217,29 +218,32 @@ body {
 
 .main-header__inner::after {
   content: "";
-  width: 960px;
-  height: 924px;
+  width: 50em;
+  height: 50em;
   position: absolute;
-  top: -350px;
-  left: 585px;
+  top: -80%;
+  left: 45%;
   z-index: 5;
-  background-image: url(../img/header.png);
+  background-image: url(../img/header0.png);
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
+
+
 .main-header__inner-title {
-  width: 370px;
+  width: 10em;
   margin: 0;
   font-family: "Georgia", serif;
-  font-size: 44px;
+  font-size: 2.5em;
   font-weight: normal;
   letter-spacing: 0.06em;
-  line-height: 57px;
+  line-height: 1.2em;
   color: #ffffff;
 }
 
 .main-header__inner-text {
-  width: 470px;
+  width: 30em;
   margin: 0;
   margin-top: 26px;
   font-size: 15px;
@@ -250,11 +254,12 @@ body {
 .main-header__inner-button {
   width: 207px;	
   margin-top: 40px;
-  background-color: #f1cdb3;
+  background-color: #4e8d47;
+  color: rgb(248, 248, 248)
 }
 
 .main-header__inner-button:hover {
-  background-color: #fddcc4;
+  background-color: #59a151;
 }
 
 
@@ -344,21 +349,22 @@ body {
 }
 
 .main-pets__button {
+  /* color: white; */
   width: 50px;
   height: 50px;
   margin-top: 244px;
   padding: 0;
   position: absolute;
   z-index: 99;
-  border: 2px solid #f1cdb3;
+  border: 2px solid #e9eee9;
   border-radius: 50%;
-  background-color: #f6f6f6;
+  background-color: #e9eee9;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 .main-pets__button:hover {
-  background-color: #f1cdb3;
+  background-color: #d5dbd1;
 }
 
 .main-pets__button:hover .main-pets__button-btn {
@@ -407,11 +413,12 @@ body {
 .main-pets__button-more {
   width: 270px;
   margin: 0 auto;
-  background-color: #f1cdb3;
+  color: white;
+  background-color: #4e8d47;
 }
 
 .main-pets__button-more:hover {
-  background-color: #fddcc4;
+  background-color: #59a151;
 }
 
 .pets__list {
@@ -462,12 +469,13 @@ body {
   width: 190px;
   margin: 0 auto;
   margin-bottom: 33px;
-  border: 2px solid #f1cdb3;
+  border: 2px solid #4e8d47;
   background-color: #fafafa;
 }
 
 .pets__list-button:hover {
-  background-color: #f1cdb3;
+  color: white;
+  background-color: #568851;
 }
 
 
@@ -572,7 +580,7 @@ body {
 
 .modal__about-item {
   line-height: 34px;
-  color: #f1cdb3;
+  color: #4e8d47;
 }
 
 .modal__about-title {
@@ -599,7 +607,7 @@ body {
   bottom: 475px;
   z-index: 10;
   text-align: center;  
-  border: 2px solid #f1cdb3;
+  border: 2px solid #4e8d47;
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
@@ -607,7 +615,7 @@ body {
 }
 
 .modal__button-close:hover {
-  background-color: #f1cdb3;
+  background-color: #e6ebe6;
 }
 
 .modal__button-close::after {
@@ -842,12 +850,13 @@ body {
   text-decoration: none;
   color: #292929;
   border-radius: 9px;  
-  background-color: #f1cdb3;
+  background-color: #4e8d47;
   transition: background-color 0.2s;
+  color: white;
 }
 
 .donation__description-button:hover {
-  background-color: #fddcc4;
+  background-color: #5ca855;
 }
 
 .donation__description-text {
@@ -869,7 +878,7 @@ body {
 .footer {
   margin-bottom: 0;
   background-color: #000000;	
-  background-image: url(../img/footer_bg.jpg);
+  background-image: url(../img/footer_bg0.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -910,7 +919,7 @@ body {
   font-size: 20px;
   letter-spacing: 0.06em;
   line-height: 45px;
-  color: #f1cdb3;
+  color: #a6bea4;
 }
 
 .footer__list-title {
@@ -1178,17 +1187,20 @@ body {
   text-align: center;  
   text-decoration: none;
   color: #292929;
-  border: 2px solid #f1cdb3;
+  border: 2px solid #4e8d47;
+  background-color: white;
   border-radius: 50%;
   transition: background-color 0.2s;
 }
 
 .friend__pagination-link:hover {
-  background-color: #f1cdb3;
+  background-color: #5ea356;
+  color: white;
 }
 
 .friend__pagination-link--active {
-  background-color: #f1cdb3;
+  background-color: #5ea356;
+  color: white;
 }
 
 .pagination {
@@ -1202,7 +1214,7 @@ body {
   margin-left: -1px;
   display: inline-block;
   border-radius: 50%;
-  background-color: #f1cdb3;
+  background-color: #4e8d47;
 }
 
 .pagination__bullets:first-child {
