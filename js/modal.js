@@ -1,52 +1,26 @@
-'use strict';
+const learnMoreButton = document.querySelectorAll('.pets__list-button')
+const modalSections = document.querySelectorAll('.modal__section')
 
-let petsList = document.querySelector('.pets__list');
-let modalWrap = document.querySelector('.modal');
-let modalWindowAll = document.querySelectorAll('.modal__section');
-
-petsList.addEventListener('click', function(evt) {
-  let target = evt.target;
-
-  if (target.closest('a')) {
-
-    for (let modalWindow of modalWindowAll) {
-      
-      if (target.getAttribute('data-modal') === modalWindow.getAttribute('data-modal')) {
-        modalWindow.classList.add('modal--show');
-        setTimeout(() => {
-          modalWindow.focus();
-        }, 1)
-      }
-
-    }
-    
-  }
-
-});
+const buttonClose = document.querySelectorAll('.modal__button-close');
 
 
-modalWrap.addEventListener('click', function(evt) {
-  let target = evt.target;
+for(let button of learnMoreButton){
+    button.addEventListener('click',(event) => {
+        const dataModalNum = button.getAttribute('data-modal');
+        for(let modalSection of modalSections){
+            if(modalSection.getAttribute('data-modal') === dataModalNum){
+                modalSection.classList.add('modal--show')
+            }
+        }
+    })
+}
 
-  for (let modalWindow of modalWindowAll) {
-
-    if (target.closest('button') || target === modalWindow) {
-      modalWindow.classList.remove('modal--show');
-    }
-    
-  }
-
-});
-  
-window.addEventListener('keydown', function(evt) {
-  
-  for (let modalWindow of modalWindowAll) {
-    
-    if (evt.code == 'Escape') {
-      evt.preventDefault();
-      modalWindow.classList.remove('modal--show');
-    }
-    
-  }
-  
-});
+for(let button of buttonClose){
+    button.addEventListener('click', () => {
+        for(let modalSection of modalSections){
+            if(modalSection.classList.contains('modal--show')){
+                modalSection.classList.remove('modal--show')
+            }
+        }
+    })
+}

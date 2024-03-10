@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 let prevBtn = document.querySelector('.main-pets__button--prev');
 let nextBtn = document.querySelector('.main-pets__button--next');
