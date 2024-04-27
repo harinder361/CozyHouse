@@ -7,9 +7,6 @@ const Posts = () => {
       <Post/>
       <Post/>
       <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
     </div>
   )
 }

@@ -1,4 +1,10 @@
 import React, { PureComponent } from 'react'
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
 import Navbar from './Components/Navbar/Navbar'
 import Home from './Pages/Home'
 import Single from './Pages/Single'
@@ -8,11 +14,40 @@ import Login from './Pages/Login'
 import Register from './Pages/Register'
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <><Navbar/><Home/></>
+    },
+    {
+      path: "/login",
+      element: <><Navbar/><Login/></>
+    },
+    {
+      path: "/register",
+      element: <><Navbar/><Register/></>
+    },
+    {
+      path: "/settings",
+      element: <><Navbar/><Settings/></>
+    },
+    {
+      path: "/write",
+      element: <><Navbar/><Write/></>
+    },
+    {
+      path: "/post/:postID",
+      element: <><Navbar/><Single/></>
+    }
+  ]);
+
+
+
   return (
-    <>
-      <Navbar/>
-      <Register/>
-    </>
+    <div>
+      <RouterProvider router={router} />
+    </div>
   )
 }
 

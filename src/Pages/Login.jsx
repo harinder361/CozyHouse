@@ -2,6 +2,7 @@ import './Login.css'
 
 const Login = () => {
   return (
+    <>
     <div className='login'>
       <span className="loginTitle">Login </span>
       <form action="" className="loginForm">
@@ -16,6 +17,7 @@ const Login = () => {
       <button className="loginRegisterButton">Register</button>
 
     </div>
+    </>
   )
 }
 

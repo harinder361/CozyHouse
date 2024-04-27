@@ -1,3 +1,4 @@
+import Footer from '../Components/Footer/Footer'
 import Header from '../Components/Header/Header'
 import Posts from '../Components/Posts/Posts'
 import Sidebar from '../Components/Sidebar/Sidebar'
@@ -11,6 +12,7 @@ const Home = () => {
         <Posts/>
         <Sidebar/>
     </div>
+    <Footer/>
     </>
   )
 }
