@@ -15,7 +15,7 @@ const SinglePost = () => {
                 <span className="singlePostAthor">Author: <b>Lorem</b></span>
                 <span className="singlePostDate">1 hour ago</span>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio a accusamus illum ex. Blanditiis laborum, architecto laboriosam ullam pariatur, suscipit adipisci perspiciatis eos in minus quibusdam amet iusto quia consequuntur?
+            <p className='singlePostDesc'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio a accusamus illum ex. Blanditiis laborum, architecto laboriosam ullam pariatur, suscipit adipisci perspiciatis eos in minus quibusdam amet iusto quia consequuntur?
             Totam libero error officia atque commodi asperiores voluptate quis tenetur rem, consequuntur suscipit, officiis id, alias vitae inventore fugit. Sapiente adipisci ducimus esse non repellendus totam commodi porro ipsum temporibus!
             Numquam, natus commodi. Consequuntur deserunt nostrum quis eligendi eum, libero repellat excepturi ratione quia perferendis voluptate illum, expedita iusto et qui dignissimos totam eaque similique dolores praesentium itaque, laborum sit?</p>
         </div>
