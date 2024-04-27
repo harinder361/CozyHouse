@@ -10,13 +10,13 @@ const Footer = () => {
                 <h3>Services</h3>
                 <ul>
                   <li>
-                    <a href="#">Web design</a>
+                    <a href="#">Book Appointment</a>
                   </li>
                   <li>
-                    <a href="#">Development</a>
+                    <a href="#">Adopt</a>
                   </li>
                   <li>
-                    <a href="#">Hosting</a>
+                    <a href="#">Treat</a>
                   </li>
                 </ul>
               </div>
@@ -49,19 +49,19 @@ const Footer = () => {
                 </ul>
               </div>
               <div class="col-lg-3 item social">
-                <a href="#">
+                <a href="https://www.facebook.com/">
                   <i class="icon fa-brands fa-square-facebook"></i>
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/?lang=en">
                   <i class="icon fa-brands fa-square-x-twitter"></i>
                 </a>
-                <a href="#">
+                <a href="https://in.pinterest.com/">
                   <i class="icon fa-brands fa-square-pinterest"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/">
                   <i class="icon fa-brands fa-square-instagram"></i>
                 </a>
-                <p class="copyright">Company Name © 2018</p>
+                <p class="copyright">CozyHouse © 2024</p>
               </div>
             </div>
           </div>

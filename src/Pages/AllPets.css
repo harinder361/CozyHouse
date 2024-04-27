@@ -1,0 +1,6 @@
+.allPets{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    margin: 20px 60px;
+}

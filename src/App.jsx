@@ -12,6 +12,7 @@ import Write from './Pages/Write'
 import Settings from './Pages/Settings'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
+import AllPets from './Pages/AllPets';
 
 function App() {
 
@@ -37,7 +38,11 @@ function App() {
       element: <><Navbar/><Write/></>
     },
     {
-      path: "/post/:postID",
+      path: "/pets",
+      element: <><Navbar/><AllPets/></>
+    },
+    {
+      path: "/pets/:petID",
       element: <><Navbar/><Single/></>
     }
   ]);

@@ -14,26 +14,27 @@ const Navbar = () => {
         <div className="topCenter">
           <ul className="topList">
             <li className="topListItem">
-              <Link to={'/'} style={{textDecoration: "none", color: "inherit"}}>HOME</Link>
+              <Link to={'/'} className='link'>HOME</Link>
             </li>
             <li className="topListItem">
-            <Link to="/" style={{textDecoration: "none", color: "inherit"}} >ABOUT</Link>
+            <Link to="/" className='link' >ABOUT</Link>
             </li>
             <li className="topListItem">
-            <Link to="/" style={{textDecoration: "none", color: "inherit"}} >CONTACT</Link>
+            <Link to="/pets" className='link' >PETS</Link>
             </li>
             <li className="topListItem">
-            <Link to="/write" style={{textDecoration: "none", color: "inherit"}} >WRITE</Link>
+            <Link to="/write" className='link' >WRITE</Link>
             </li>
             <li className="topListItem">
-            <Link to="/login" style={{textDecoration: "none", color: "inherit"}} >LOGOUT</Link>
+            <Link to="/login" className='link' >LOGOUT</Link>
             </li>
           </ul>
         </div>
         <div className="topRight">
         
         {/* <img className='topImage' src="profile" alt=<i class="fa-solid fa-user"></i> /> */}
-        <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
+        {/* <i className="topSearchIcon fa-solid fa-magnifying-glass"></i> */}
+        <i className="topSearchIcon fa-solid fa-user"></i>
         </div>
     </div>
   )
