@@ -59,7 +59,7 @@ const AllPets = () => {
     </div>
     <div className='allPets'>
         {!petsToShow ?  <h1>No Pets to Show</h1> : petsToShow.map((pet) => {
-            return <Post name={pet.name} description={pet.description} petID={pet.petID} image={".."+pet.image}/>
+            return <Post name={pet.name} description={pet.description} petID={pet.petID} image={pet.image}/>
         })}
       
     </div>

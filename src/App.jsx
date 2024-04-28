@@ -13,6 +13,7 @@ import Settings from './Pages/Settings'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
 import AllPets from './Pages/AllPets';
+import About from './Pages/About';
 
 function App() {
 
@@ -22,12 +23,16 @@ function App() {
       element: <><Navbar/><Home/></>
     },
     {
+      path: "/about",
+      element: <><Navbar/><About/></>
+    },
+    {
       path: "/login",
-      element: <><Navbar/><Login/></>
+      element: <><Login/></>
     },
     {
       path: "/register",
-      element: <><Navbar/><Register/></>
+      element: <><Register/></>
     },
     {
       path: "/settings",

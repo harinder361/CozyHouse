@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Post = (props) => {
   return (
     <div className='post'>
-        <img src={props.image} alt="" className="postImage" />
+        <img src={props.image[0]=='/' ? ".."+props.image : props.image} alt="" className="postImage" />
         <div className="postInfo">
             <div className="postCats">
                 <span className="postCat">Music</span>
