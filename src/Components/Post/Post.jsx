@@ -1,5 +1,5 @@
 import './Post.css'
-import headerImage from '../../Assets/headerImage.jpg'
+// import headerImage from '../../Assets/headerImage.jpg'
 import { Link } from "react-router-dom";
 
 
@@ -9,8 +9,8 @@ const Post = (props) => {
         <img src={props.image[0]=='/' ? ".."+props.image : props.image} alt="" className="postImage" />
         <div className="postInfo">
             <div className="postCats">
-                <span className="postCat">Music</span>
-                <span className="postCat">Life</span>
+                <span className="postCat">Energetic</span>
+                <span className="postCat">Child-Friendly</span>
             </div>
             <span className="postTitle"><Link to={`/pets/${props.petID}`} className="link">{props.name}</Link></span>
             <hr />

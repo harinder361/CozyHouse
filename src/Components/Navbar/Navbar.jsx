@@ -23,7 +23,7 @@ const Navbar = () => {
             <Link to="/pets" className='link' >PETS</Link>
             </li>
             <li className="topListItem">
-            <Link to="/write" className='link' >WRITE</Link>
+            <Link to="/write" className='link' >ADD</Link>
             </li>
             <li className="topListItem">
             <Link to="/login" className='link' >LOGOUT</Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="topRight">
         
         {/* <img className='topImage' src="profile" alt=<i class="fa-solid fa-user"></i> /> */}
-        {/* <i className="topSearchIcon fa-solid fa-magnifying-glass"></i> */}
+        <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
         <i className="topSearchIcon fa-solid fa-user"></i>
         </div>
     </div>

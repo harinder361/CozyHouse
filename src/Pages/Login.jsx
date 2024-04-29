@@ -1,20 +1,21 @@
+import { Link } from 'react-router-dom';
 import './Login.css'
 
 const Login = () => {
   return (
     <>
     <div className='login'>
-      <span className="loginTitle">Login </span>
+      <span className="loginTitle">Login</span>
       <form action="" className="loginForm">
         <label htmlFor="">Email</label>
-        <input type="email" className='loginInput' placeholder='Enter your Email...' />
+        <input type="email" id="emailInput" className='loginInput' placeholder='Enter your Email...' />
 
         <label htmlFor="">Password</label>
-        <input type="password" className='loginInput' placeholder='Enter your Password...' />
+        <input type="password" id="passwordInput" className='loginInput' placeholder='Enter your Password...' />
 
-        <button className="loginButton">Login</button>
+        <Link to="/" className="link loginButton">Login</Link>
       </form>
-      <button className="loginRegisterButton">Register</button>
+      <Link to="/register" className="link loginRegisterButton">Register</Link>
 
     </div>
     </>

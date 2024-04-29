@@ -19,7 +19,7 @@ const SinglePost = () => {
                 </div>
             </h1>
             <div className="singlePostInfo">
-                <span className="singlePostAthor">Author: <b>Lorem</b></span>
+                <span className="singlePostAthor">Breed: <b>{petList[petID].breed}</b></span>
                 <span className="singlePostDate">1 hour ago</span>
             </div>
             <p className='singlePostDesc'>{petList[petID].description}</p>
