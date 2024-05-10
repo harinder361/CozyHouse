@@ -16,9 +16,10 @@ const Write = () => {
       const name = document.querySelector('#name').value;
       const image = document.querySelector('#imageURL').value;
       const description = document.querySelector('#description').value;
+      const petID = 31;
 
       // Create new object
-      const newObj = { name, image, description };
+      const newObj = { name, image, description, petID };
 
       // Add new object to array
       console.log(petList);

@@ -14,7 +14,7 @@ const Post = (props) => {
             </div>
             <span className="postTitle"><Link to={`/pets/${props.petID}`} className="link">{props.name}</Link></span>
             <hr />
-            <span className="postDate">1 hrs ago</span>
+            <span className="postDate">{Math.floor(Math.random()*15)+1} hrs ago</span>
         </div>
         <p className="postDescription">{props.description}</p>
     </div>
