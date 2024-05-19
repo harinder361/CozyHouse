@@ -1,0 +1,27 @@
+{
+  "name": "cozy-house",
+  "version": "1.0.0",
+  "description": "Cozy House - Animal Shelter, Foster Pets",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshu-o5/CozyHouse.git"
+  },
+  "author": "himanshu-o5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshu-o5/CozyHouse/issues"
+  },
+  "homepage": "https://github.com/himanshu-o5/CozyHouse#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.5",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0"
+  }
+}
